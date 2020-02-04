@@ -57,7 +57,7 @@ META_VARS = dict(META_VARS_RE.findall(META_FILE))
 if __name__ == "__main__":
     setup(
         name=NAME,
-        entry_points={'console_scripts': ['nbmerge = nbmerge:main']},
+        entry_points={'console_scripts': ['nbconcat = nbmerge:main']},
         description=META_VARS["description"],
         license=META_VARS["license"],
         url=META_VARS["uri"],
